@@ -1,0 +1,1 @@
+# BMG_odevler_2021
