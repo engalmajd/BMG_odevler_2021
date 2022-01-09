@@ -3,30 +3,29 @@ sinav_sonuc = {'isimler': ['ayse K.', 'Ahmet M.', 'Nuri C.', 'Nawar T.', 'Suzan 
                'turkce': [70, 30, 23, 80, 78, 46]}
 
 def yeni_kayit():
-    yeni_ismi = []
-    yeni_cinsiyet = []
-    yeni_mat_not = []
-    yeni_turkce_not = []
-    yeni_isim1 = []
+    y_ismi = []
+    y_cinsiyet = []
+    y_mat_not = []
+    y_turkce_not = []
     for i in range(2):
         isim = input("isim giriniz :")
         cinsiyet = input("cinsiyet giriniz :")
         mat_notu = input("matematik notu giriniz:")
         turkce_notu = input("turkce notu giriniz :")
-        yeni_ismi.append(isim)
-        yeni_cinsiyet.append(cinsiyet)
-        yeni_mat_not.append(mat_notu)
-        yeni_turkce_not.append(turkce_notu)
-        print(yeni_ismi)
-        print(yeni_cinsiyet)
-        print(yeni_mat_not)
-        print(yeni_turkce_not)
+        y_ismi.append(isim)
+        y_cinsiyet.append(cinsiyet)
+        y_mat_not.append(mat_notu)
+        y_turkce_not.append(turkce_notu)
+        print(y_ismi)
+        print(y_cinsiyet)
+        print(y_mat_not)
+        print(y_turkce_not)
     for k in range(2):
-        sinav_sonuc['isimler'].append(yeni_ismi[k])
-        sinav_sonuc['cinsiyet'].append(yeni_cinsiyet[k])
-        sinav_sonuc['matematik'].append(yeni_mat_not[k])
-        sinav_sonuc['turkce'].append(yeni_turkce_not[k])
-       
+        sinav_sonuc['isimler'].append(y_ismi[k])
+        sinav_sonuc['cinsiyet'].append(y_cinsiyet[k])
+        sinav_sonuc['matematik'].append(y_mat_not[k])
+        sinav_sonuc['turkce'].append(y_turkce_not[k])
+
         print(sinav_sonuc["isimler"],'\n')
         print(sinav_sonuc["cinsiyet"], '\n')
         print(sinav_sonuc["matematik"],'\n')
